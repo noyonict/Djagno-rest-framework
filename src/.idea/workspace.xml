@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2a80c6c-a4e8-461a-8a82-722c4929ca2c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Django_rest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django_rest/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo1/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/api/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,12 +38,12 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="33" />
-          <entry key="Python" value="4448" />
+          <entry key="Python" value="4732" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4448" />
+          <entry key="py" value="4732" />
           <entry key="txt" value="33" />
         </counts>
       </usages-collector>
@@ -52,52 +51,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-                <marker date="1536468395491" expanded="true" signature="116:121" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+            <state relative-caret-position="170">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
-                <element signature="e#335#821#0" />
+                <element signature="e#888#992#0" />
+                <element signature="e#677#697#0" />
+                <element signature="e#1110#1127#0" />
+                <element signature="e#912#932#0" />
+                <element signature="e#1279#1296#0" />
+                <element signature="e#1053#1074#0" />
+                <element signature="e#154#222#0" />
                 <element signature="e#1023#1630#0" />
+                <element signature="e#1102#1205#0" />
+                <element signature="e#1182#1484#0" />
+                <element signature="e#1587#1630#0" />
                 <element signature="e#1762#1900#0" />
                 <element signature="e#1984#2273#0" />
                 <element signature="e#2264#3077#0" />
-                <marker date="1536493882829" expanded="true" signature="1156:1717" ph="..." />
+                <marker date="1536493882829" expanded="false" signature="1156:1717" ph="..." />
                 <marker date="1536493882829" expanded="true" signature="1415:1469" ph="..." />
                 <marker date="1536493882829" expanded="true" signature="1584:1638" ph="..." />
                 <marker date="1536493882829" expanded="false" signature="1758:1759" ph="..." />
-                <marker date="1536493882829" expanded="true" signature="1869:2396" ph="..." />
+                <marker date="1536493882829" expanded="false" signature="1869:2395" ph="..." />
                 <marker date="1536493882829" expanded="false" signature="3096:3101" ph="..." />
-                <marker date="1536493882829" expanded="true" signature="3585:4432" ph="..." />
+                <marker date="1536493882829" expanded="false" signature="3585:4432" ph="..." />
                 <marker date="1536493882829" expanded="true" signature="3615:3620" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Django_rest/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="141" column="38" lean-forward="true" selection-start-line="141" selection-start-column="38" selection-end-line="141" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#310#1" />
-                <element signature="e#468#530#0" />
               </folding>
             </state>
           </provider>
@@ -106,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/api/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="357">
+              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -118,10 +99,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo1/api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+            <state relative-caret-position="157">
+              <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#776#1248#0" />
                 <element signature="e#375#461#0" />
                 <element signature="e#509#1074#0" />
                 <element signature="e#545#709#0" />
@@ -140,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo1/api/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="60" lean-forward="true" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+            <state relative-caret-position="241">
+              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -175,11 +157,11 @@
         <option value="$PROJECT_DIR$/demo1/api/serializers.py" />
         <option value="$PROJECT_DIR$/demo1/models.py" />
         <option value="$PROJECT_DIR$/blog/api/serializers.py" />
-        <option value="$PROJECT_DIR$/demo1/api/urls.py" />
         <option value="$PROJECT_DIR$/demo1/api/views.py" />
-        <option value="$PROJECT_DIR$/blog/api/urls.py" />
-        <option value="$PROJECT_DIR$/blog/api/views.py" />
         <option value="$PROJECT_DIR$/Django_rest/settings.py" />
+        <option value="$PROJECT_DIR$/blog/api/urls.py" />
+        <option value="$PROJECT_DIR$/demo1/api/urls.py" />
+        <option value="$PROJECT_DIR$/blog/api/views.py" />
       </list>
     </option>
   </component>
@@ -471,32 +453,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo1/api/urls.py">
+    <entry file="file://$PROJECT_DIR$/Django_rest/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="60" lean-forward="true" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+        <state relative-caret-position="275">
+          <caret line="141" column="38" lean-forward="true" selection-start-line="141" selection-start-column="38" selection-end-line="141" selection-end-column="38" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo1/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-            <element signature="e#375#461#0" />
-            <element signature="e#509#1074#0" />
-            <element signature="e#545#709#0" />
-            <element signature="e#1133#2021#0" />
-            <element signature="e#2142#2736#0" />
-            <element signature="e#2678#3607#0" />
-            <marker date="1536492124139" expanded="true" signature="771:1462" ph="..." />
-            <marker date="1536492124139" expanded="true" signature="1144:1205" ph="..." />
-            <marker date="1536492124139" expanded="true" signature="1322:1383" ph="..." />
-            <marker date="1536492124139" expanded="true" signature="3725:4649" ph="..." />
+            <element signature="e#0#310#1" />
+            <element signature="e#468#530#0" />
           </folding>
         </state>
       </provider>
@@ -512,10 +475,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo1/api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo1/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#776#1248#0" />
+            <element signature="e#375#461#0" />
+            <element signature="e#509#1074#0" />
+            <element signature="e#545#709#0" />
+            <element signature="e#1133#2021#0" />
+            <element signature="e#2142#2736#0" />
+            <element signature="e#2678#3607#0" />
+            <marker date="1536492124139" expanded="true" signature="771:1462" ph="..." />
+            <marker date="1536492124139" expanded="true" signature="1144:1205" ph="..." />
+            <marker date="1536492124139" expanded="true" signature="1322:1383" ph="..." />
+            <marker date="1536492124139" expanded="true" signature="3725:4649" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="357">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -524,34 +518,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        <state relative-caret-position="170">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
-            <element signature="e#335#821#0" />
+            <element signature="e#888#992#0" />
+            <element signature="e#677#697#0" />
+            <element signature="e#1110#1127#0" />
+            <element signature="e#912#932#0" />
+            <element signature="e#1279#1296#0" />
+            <element signature="e#1053#1074#0" />
+            <element signature="e#154#222#0" />
             <element signature="e#1023#1630#0" />
+            <element signature="e#1102#1205#0" />
+            <element signature="e#1182#1484#0" />
+            <element signature="e#1587#1630#0" />
             <element signature="e#1762#1900#0" />
             <element signature="e#1984#2273#0" />
             <element signature="e#2264#3077#0" />
-            <marker date="1536493882829" expanded="true" signature="1156:1717" ph="..." />
+            <marker date="1536493882829" expanded="false" signature="1156:1717" ph="..." />
             <marker date="1536493882829" expanded="true" signature="1415:1469" ph="..." />
             <marker date="1536493882829" expanded="true" signature="1584:1638" ph="..." />
             <marker date="1536493882829" expanded="false" signature="1758:1759" ph="..." />
-            <marker date="1536493882829" expanded="true" signature="1869:2396" ph="..." />
+            <marker date="1536493882829" expanded="false" signature="1869:2395" ph="..." />
             <marker date="1536493882829" expanded="false" signature="3096:3101" ph="..." />
-            <marker date="1536493882829" expanded="true" signature="3585:4432" ph="..." />
+            <marker date="1536493882829" expanded="false" signature="3585:4432" ph="..." />
             <marker date="1536493882829" expanded="true" signature="3615:3620" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Django_rest/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="141" column="38" lean-forward="true" selection-start-line="141" selection-start-column="38" selection-end-line="141" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#310#1" />
-            <element signature="e#468#530#0" />
           </folding>
         </state>
       </provider>
