@@ -1,12 +1,44 @@
 from django.http import JsonResponse, HttpResponse
 from django.shortcuts import get_object_or_404
-from rest_framework import viewsets
+from rest_framework import viewsets, generics, mixins
 from rest_framework.parsers import JSONParser
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.views.decorators.csrf import csrf_exempt
 from blog.models import Post
 from .serializers import PostSerializers
+
+
+class PostGenericMixinAPIView(generics.GenericAPIView,
+                              mixins.ListModelMixin,
+                              mixins.CreateModelMixin,
+                              mixins.UpdateModelMixin,
+                              mixins.DestroyModelMixin,
+                              mixins.RetrieveModelMixin):
+    queryset = Post.objects.all()
+    serializer_class = PostSerializers
+    lookup_field = 'id'
+
+    def get(self, request, id=None):
+        if id:
+            return self.retrieve(request, id)
+        else:
+            return self.list(request)
+
+    def post(self, request):
+        return self.create(request)
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
+    def put(self, request, id=None):
+        return self.update(request, id)
+
+    def perform_update(self, serializer):
+        serializer.save(user=self.request.user)
+
+    def delete(self, request, id=None):
+        return self.destroy(request, id)
 
 
 class PostViewSet(viewsets.ModelViewSet):

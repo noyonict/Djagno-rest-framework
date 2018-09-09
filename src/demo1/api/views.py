@@ -1,12 +1,44 @@
 from django.http import JsonResponse, HttpResponse
 from django.shortcuts import get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
-from rest_framework import viewsets
+from rest_framework import viewsets, generics, mixins
 from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .serializers import EmployeeSerializer
 from demo1.models import EmployeeInformation
+
+
+class EmployeeModelMixinAPIView(generics.GenericAPIView,
+                                mixins.ListModelMixin,
+                                mixins.CreateModelMixin,
+                                mixins.UpdateModelMixin,
+                                mixins.RetrieveModelMixin,
+                                mixins.DestroyModelMixin):
+    queryset = EmployeeInformation.objects.all()
+    serializer_class = EmployeeSerializer
+    lookup_field = 'id'
+
+    def get(self, request, id=None):
+        if id:
+            return self.retrieve(request)
+        else:
+            return self.list(request)
+
+    def post(self, request):
+        return self.create(request)
+
+    # def perform_create(self, serializer):
+    #     serializer.save(create_by=self.request.user)
+
+    def put(self, request, id=None):
+        return self.update(request, id)
+
+    # def perform_update(self, serializer):
+    #     serializer.save(create_by=self.request.user)
+
+    def delete(self, request, id=None):
+        return self.destroy(request, id)
 
 
 class EmployeeViewSets(viewsets.ModelViewSet):
