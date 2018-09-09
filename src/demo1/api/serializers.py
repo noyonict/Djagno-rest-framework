@@ -19,4 +19,6 @@ class EmployeeSerializer(serializers.ModelSerializer):
             'working_area',
         ]
 
+        # fields = ['__all__']
+
 
