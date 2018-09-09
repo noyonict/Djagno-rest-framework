@@ -4,6 +4,8 @@ from rest_framework import viewsets, generics, mixins
 from rest_framework.parsers import JSONParser
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework.authentication import SessionAuthentication, BasicAuthentication, TokenAuthentication
+from rest_framework.permissions import IsAdminUser, IsAuthenticated, IsAuthenticatedOrReadOnly
 from django.views.decorators.csrf import csrf_exempt
 from blog.models import Post
 from .serializers import PostSerializers
@@ -18,6 +20,8 @@ class PostGenericMixinAPIView(generics.GenericAPIView,
     queryset = Post.objects.all()
     serializer_class = PostSerializers
     lookup_field = 'id'
+    authentication_classes = [SessionAuthentication, BasicAuthentication]
+    permission_classes = [IsAuthenticated]
 
     def get(self, request, id=None):
         if id:

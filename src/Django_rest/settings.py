@@ -40,7 +40,8 @@ INSTALLED_APPS = [
 
     # Third party app
     'rest_framework',
-    
+    'rest_framework.authtoken',
+
     # My own app
     'blog',
     'demo1',
