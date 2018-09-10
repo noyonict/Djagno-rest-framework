@@ -1,11 +1,12 @@
 from django.urls import path, include
 from rest_framework import routers
 from .views import EmployeeViewSets, all_employees, employee_detail, DemoAPIView, DemoDetailAPIView, \
-    EmployeeModelMixinAPIView
+    EmployeeModelMixinAPIView, EmployeeModelViewSets
 
 
 router = routers.DefaultRouter()
 router.register('', EmployeeViewSets)
+# router.register('', EmployeeModelViewSets)
 
 urlpatterns = [
     # Generic model Mixin Api View
@@ -22,5 +23,8 @@ urlpatterns = [
 
     # Django class base and router api view
     path('', include(router.urls)),
+
+    # Employee model view sets
+    # path('employee/', include(router.urls))
 ]
 

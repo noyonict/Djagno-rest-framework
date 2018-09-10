@@ -9,6 +9,13 @@ from .serializers import EmployeeSerializer
 from demo1.models import EmployeeInformation
 
 
+# Model View sets and routers
+class EmployeeModelViewSets(viewsets.ModelViewSet):
+    queryset = EmployeeInformation.objects.all()
+    serializer_class = EmployeeSerializer
+    lookup_field = 'id'
+
+
 class EmployeeModelMixinAPIView(generics.GenericAPIView,
                                 mixins.ListModelMixin,
                                 mixins.CreateModelMixin,
